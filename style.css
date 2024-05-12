@@ -146,6 +146,8 @@ a{
 		cursor: pointer;
 		font-weight: 400;
 		font-size: 16px;
+		color: #1B1C21;
+
 	}
 	.cards-open__more::before{
 		top: 3px;
