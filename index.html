@@ -8,14 +8,16 @@
 	/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Верстка блока. JavaScript в браузере</title>
+	<title>JavaScript в браузере</title>
 </head>
 <body>
 	<header class="header"></header>
 	<main class="main">
 		<div class="container">
-			<section class="repair container__repair">
-				<h1 class="repair__title">Ремонт техники различных брендов</h1>
+			<section class="repair">
+				<div class="repair__top">
+					<h1 class="repair__title">Ремонт техники различных брендов</h1>
+				</div>
 				<div class="slider">
 					<div class="swiper">
 						<div class="swiper-wrapper">
@@ -202,9 +204,7 @@
 						<img src="./image/go.svg" alt="" class="cards__icon">
 					</div>
 				</div>
-				<div class="cards-open">
-					<button class="cards-open__more">Показать все</button>
-				</div>
+				<button class="cards-open">Показать все</button>
 			</section>
 		</div>
 	</main>

@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper", {
 let moreCardsTablet = document.querySelectorAll(".cards__wrapper_hide-tablet");
 let moreCardsDesctop = document.querySelectorAll(".cards__wrapper_hide-desctop");
 
-let btnText = document.querySelector(".cards-open__more");
+let btnText = document.querySelector(".cards-open");
 
 if (window.innerWidth >= 768 && window.innerWidth < 1120) {
   btnText.addEventListener("click", () => {
