@@ -39,15 +39,14 @@ body{
 	font-family: "TT Lakes Regular";
 	font-size: 14px;
 	color: #1B1C21;
-	background-color: rgba(255, 255, 255, 1);
+	background:#F8F8F8 0%;
 }
 
-.container{
-	padding: 16px;
-}
+
 .repair__top{
 	background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
-	margin-bottom: 30px;
+	padding: 16px;
+	margin-bottom: 16px;
 }
 .repair__title{
 	font-family: "TT Lakes Regular";
@@ -58,6 +57,11 @@ body{
 	letter-spacing: -0.2px;
 	color: rgba(126, 126, 130, 1);
 }
+
+.container__repair{
+	padding: 0 16px;
+}
+
 .swiper {
   width: 100%;
   height: 116px;
@@ -67,6 +71,7 @@ a{
 	
 }
 .swiper-slide{
+	background-color: rgba(255, 255, 255, 1);
 	width: auto;
 }
 .swiper-pagination-bullet-active{
@@ -92,11 +97,10 @@ a{
 	width: 16px;
 	height: 16px;
 }
-.cards,
+
 .cards-open{
 	display: none;
 }
-
 
 .swiper-slide__link {
 	position: absolute;
@@ -108,36 +112,33 @@ a{
 }
 
 @media (min-width: 768px) {
-	.container{
-		padding: 16px 24px 24px 24px;
+	.repair__top{
+		padding: 16px 24px;
+		margin-bottom: 20px;
 	}
-	.slider{
-		display: none;
+	.swiper {
+		width: 100%;
+		height: 100%;
 	}
-	.repair__title{
-		margin-bottom: 40px;
-	}
-	.cards{
+	.swiper-wrapper{
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
 		gap: 16px 24px;
 	}
-	.cards__wrapper{
-		position: relative;
-		border-radius: 6px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0 16px;
-		min-height: 72px;
+
+	.swiper-slide__wrapper{
 		min-width: 224px;
 		max-width: 240px;
-		border: 1px solid rgba(234, 234, 234, 1)
 	}
-	.container__indent{
-		margin: 0 0 24px 0;
+	.swiper__inner{
+		margin-bottom: 24px;
 	}
-
+	.swiper-pagination{
+		display: none;
+	}
+	.container__repair{
+		padding: 0 24px;
+	}
 	.cards-open{
 		display: block;
 		position: relative;
@@ -164,35 +165,35 @@ a{
 		transform: rotate(180deg);
 		transition: 0.4s;
 	}
-	.cards__wrapper_hide-tablet{
+	.swiper-slide__wrapper--hide-tablet{
 		display: none;
 	}
-	.cards__link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 1;
-	}
+
 }
 
 
 @media (min-width: 1120px) {
-	.cards{
-
+	.repair__top{
+		padding: 16px 32px;
+	}
+	.swiper-wrapper{
 		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 		gap: 16px 32px;
+	}
+	.swiper-slide__wrapper{
+		min-width: 240px;
 	}
 	.container{
 		max-width: 1120px;
 		margin: 0 auto;
-		padding: 15px 32px 32px 32px;
 	}
-	.cards__wrapper_hide-tablet{
+	.container__repair{
+		padding: 0 32px;
+	}
+	.swiper-slide__wrapper--hide-tablet{
 		display: flex;
 	}
-	.cards__wrapper_hide-desctop{
+	.swiper-slide__wrapper--hide-desctop{
 		display: none;
 	}
 	.clicked.cards-open::before{
