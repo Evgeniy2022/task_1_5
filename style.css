@@ -58,7 +58,7 @@ body{
 	color: rgba(126, 126, 130, 1);
 }
 
-.container__repair{
+.container__slider{
 	padding: 0 16px;
 }
 
@@ -136,7 +136,10 @@ a{
 	.swiper-pagination{
 		display: none;
 	}
-	.container__repair{
+	.container__slider{
+		padding: 0 24px;
+	}
+	.container__button{
 		padding: 0 24px;
 	}
 	.cards-open{
@@ -187,7 +190,10 @@ a{
 		max-width: 1120px;
 		margin: 0 auto;
 	}
-	.container__repair{
+	.container__slider{
+		padding: 0 32px;
+	}
+	.container__button{
 		padding: 0 32px;
 	}
 	.swiper-slide__wrapper--hide-tablet{
